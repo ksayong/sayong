@@ -1,66 +1,174 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
   <title>sayong Portfolio</title>
 </head>
+
 <body>
   <header class="header">
-    <div class="container">
+    <div class="inner">
       <nav class="global-menu">
         <ul class="global-menu__list">
-          <li class="global-menu__list-item">HOME</li>
-          <li class="global-menu__list-item">ABOUT</li>
-          <li class="global-menu__list-item">SKILLS</li>
-          <li class="global-menu__list-item">WORKS</li>
-          <li class="global-menu__list-item">CONTACT</li>
+          <li class="global-menu__list-item"><a href="">HOME</a></li>
+          <li class="global-menu__list-item"><a href="">ABOUT</a></li>
+          <li class="global-menu__list-item"><a href="">SKILLS</a></li>
+          <li class="global-menu__list-item"><a href="">WORKS</a></li>
+          <li class="global-menu__list-item"><a href="">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
-    <section id="main-visual">
-      <div class="container">
-        <div class="main-visual">
-          <h1><img src="./img/myname.svg" width="320" height="200" alt="Kawanago Sayo"></h1>
-          <p>Engineer & WebDesigner</p>
+
+  <main class="top">
+    <wrapper>
+
+      <section id="main-visual" class="main-visual">
+        <div class="inner">
+
+          <div class="main-visual-wrapper">
+            <h1>Kawanago <br>Sayo</h1>
+            <p>Web Engineer</p>
+          </div>
+
         </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container">
-        <div class="about">
-          <h2>About me</h2>
-          <h3>自己紹介</h3>
-          <div>
-            <img src="./img/profile.jpg" alt="">
+      </section>
+
+      <section id="about" class="section">
+        <div class="inner">
+          <div class="about">
+            <div class="section__title">
+              <h2>About me</h2>
+              <p>自己紹介</p>
+            </div>
+            <div class="section__body">
+              <img src="./img/profile.jpg" alt="">
+              <p>かわなご さよ</p>
+              <p>
+                テーマパークでの接客を6年間経験後,<br>
+                職業訓練校にてJavaを中心に半年間学習しました。<br>
+                見た目を作る部分の楽しさや奥深さに惹かれ<br>
+                フロントエンドに強いエンジニアになるため勉強しています。
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="container">
-        <div class="skills">
+      </section>
 
+      <section id="skills" class="section">
+        <div class="inner">
+          <div class="skills">
+            <div class="section__title">
+              <h2>Skills</h2>
+              <p>スキル</p>
+            </div>
+            <div class="section__body skill-list">
+              <div class="skill-item">
+                <h3 class="skill-item__title">Java</h3>
+                <p class="skill-item__body">
+                  メソッドやクラス、基本的な構文を理解している。
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3 class="skill-item__title">HTML/CSS</h3>
+                <p class="skill-item__body">
+                  自分で考えたデザインを実際に構築することができる。レスポンシブ対応をすることができる。
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3 class="skill-item__title">JavaScript</h3>
+                <p class="skill-item__body">
+                  HTML/CSSで実装したページに動的な仕組みを実装できる。
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3 class="skill-item__title">Vue.js</h3>
+                <p class="skill-item__body">
+                  APIを利用した機能をVueを利用して実装できる。
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3 class="skill-item__title">Git</h3>
+                <p class="skill-item__body">
+                  コミット〜プッシュまでの一通りを理解している。GitHubとBacklogの実務経験あり。
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3 class="skill-item__title">SQL</h3>
+                <p class="skill-item__body">
+                  データベースの基礎知識とSQL文の基本構文を理解している。
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="works">
-      <div class="container">
-        <div class="works">
+      </section>
 
+      <section id="works" class="section">
+        <div class="inner">
+          <div class="works">
+            <div class="section__title">
+              <h2>Works</h2>
+              <p>制作物</p>
+            </div>
+            <div class="section__body app">
+              <h3 class="app__title">タイトル</h3>
+              <div class="app__image">
+              </div>
+              <div class="app__description">
+                <p>
+                  テキストテキスト
+                </p>
+                <p>
+                  使用言語：HTML,CSS,JavaScript,Vue.js,jQuery
+                </p>
+                <p>
+                  WEBアプリはこちら
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="contact">
+      </section>
 
+      <section id="contact" class="section">
+        <div class="inner">
+          <div class="contact">
+            <div class="section__title">
+              <h2>Contact</h2>
+              <p>お問い合わせ</p>
+            </div>
+            <div class="section__body">
+              <form action="#" class="form">
+                <label class="form-item">
+                  <span class="form-item__label">お名前</span>
+                  <input type="text" class="form-item__input">
+                </label>
+                <label class="form-item">
+                  <span class="form-item__label">メールアドレス</span>
+                  <input type="text" class="form-item__input">
+                </label>
+                <label class="form-item">
+                  <span class="form-item__label">お問合せ内容</span>
+                  <textarea class="form-item__input" name="" cols="30" rows="10"></textarea>
+                </label>
+                <button>
+                  送信
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
   </main>
+  </wrapper>
+  <footer class="footer">
+    <p>&copy;2020 Kawanago Sayo All Rights Reserved.</p>
+  </footer>
 </body>
+
 </html>
